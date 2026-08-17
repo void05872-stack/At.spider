@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.T SHOW</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#050816;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 20% 20%,rgba(0,247,255,.08),transparent 25%),
+radial-gradient(circle at 80% 80%,rgba(123,44,237,.08),transparent 25%);
+z-index:-1;
+}
+
+.logo{
+position:fixed;
+top:20px;
+right:25px;
+font-size:32px;
+font-weight:900;
+background:linear-gradient(90deg,#00f7ff,#7c3aed);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+z-index:999;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.75)),
+url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=2000&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:70px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+line-height:2;
+opacity:.9;
+}
+
+.btn{
+display:inline-block;
+padding:18px 40px;
+background:#00f7ff;
+color:black;
+font-weight:700;
+text-decoration:none;
+border-radius:50px;
+margin-top:30px;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.section{
+padding:100px 8%;
+}
+
+.title{
+font-size:42px;
+text-align:center;
+margin-bottom:50px;
+color:#00f7ff;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#0f172a;
+padding:30px;
+border-radius:25px;
+transition:.4s;
+border:1px solid rgba(255,255,255,.05);
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,247,255,.15);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#00f7ff;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:20px;
+transition:.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.03);
+}
+
+.timeline{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.step{
+background:#0f172a;
+padding:25px;
+border-radius:20px;
+}
+
+.support{
+padding:100px 20px;
+text-align:center;
+background:#08111f;
+}
+
+.support h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.buttons button{
+padding:15px 35px;
+margin:10px;
+border:none;
+border-radius:50px;
+font-weight:bold;
+cursor:pointer;
+font-size:16px;
+}
+
+.yes{
+background:#00ff88;
+}
+
+.no{
+background:#ef4444;
+color:white;
+}
+
+#answerBox{
+margin-top:30px;
+}
+
+.telegram-btn{
+display:inline-block;
+padding:15px 35px;
+background:#229ED9;
+color:white;
+text-decoration:none;
+border-radius:50px;
+margin-top:15px;
+}
+
+.faq{
+max-width:1000px;
+margin:auto;
+}
+
+.faq-item{
+background:#0f172a;
+margin-bottom:15px;
+padding:25px;
+border-radius:20px;
+}
+
+.comment-box{
+max-width:900px;
+margin:auto;
+background:#0f172a;
+padding:30px;
+border-radius:20px;
+}
+
+input,textarea{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+background:#1e293b;
+color:white;
+}
+
+.send{
+background:#00f7ff;
+color:black;
+cursor:pointer;
+font-weight:bold;
+}
+
+footer{
+padding:40px;
+text-align:center;
+background:#020617;
+color:#aaa;
+}
+</style>
+</head>
+<body>
+
+<div class="logo">A.T SHOW</div>
+
+<section class="hero">
+<div class="hero-content">
+
+<h1>🚀 A.T SHOW</h1>
+
+<p>
+یک پروژه جدید در حال شکل‌گیری است.
+ما قصد داریم محتوای جذاب، متفاوت و حرفه‌ای تولید کنیم و
+یک جامعه فعال از افراد علاقه‌مند ایجاد کنیم.
+</p>
+
+<a href="#support" class="btn">شروع همراهی</a>
+
+</div>
+</section>
+
+<section class="section">
+
+<h2 class="title">💡 درباره پروژه</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🎬 محتوای جذاب</h3>
+<p>ساخت محتوای سرگرم‌کننده و متفاوت برای مخاطبان.</p>
+</div>
+
+<div class="card">
+<h3>🔥 ایده‌های جدید</h3>
+<p>تمرکز روی ایده‌های خلاقانه و خاص.</p>
+</div>
+
+<div class="card">
+<h3>🌍 جامعه فعال</h3>
+<p>ساخت محیطی برای تعامل و رشد.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">🎯 اهداف ما</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚀 رشد مداوم</h3>
+<p>پیشرفت و توسعه در طول زمان.</p>
+</div>
+
+<div class="card">
+<h3>⭐ کیفیت بالا</h3>
+<p>ارائه بهترین محتوا با بالاترین کیفیت.</p>
+</div>
+
+<div class="card">
+<h3>🤝 ارتباط نزدیک</h3>
+<p>ارتباط مستقیم با مخاطبان و اعضای جامعه.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">🛣️ نقشه راه</h2>
+
+<div class="timeline">
+
+<div class="step">
+<h3>مرحله اول</h3>
+<p>راه‌اندازی و شروع فعالیت.</p>
+</div>
+
+<div class="step">
+<h3>مرحله دوم</h3>
+<p>انتشار محتوای منظم.</p>
+</div>
+
+<div class="step">
+<h3>مرحله سوم</h3>
+<p>گسترش جامعه مخاطبان.</p>
+</div>
+
+<div class="step">
+<h3>مرحله چهارم</h3>
+<p>توسعه پروژه و امکانات جدید.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">🖤 گالری</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80">
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80">
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">❓ سوالات متداول</h2>
+
+<div class="faq">
+
+<div class="faq-item">
+<h3>این پروژه درباره چیست؟</h3>
+<p>یک پروژه در حال توسعه برای تولید محتوا و ساخت یک جامعه فعال.</p>
+</div>
+
+<div class="faq-item">
+<h3>چطور باخبر شویم؟</h3>
+<p>از طریق کانال تلگرام پروژه.</p>
+</div>
+
+<div class="faq-item">
+<h3>چه زمانی شروع می‌شود؟</h3>
+<p>به‌زودی اطلاع‌رسانی خواهد شد.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="support" class="support">
+
+<h2>💙 از پروژه حمایت می‌کنی؟</h2>
+
+<p>
+اگر دوست داری از اولین نفراتی باشی که اخبار پروژه را دریافت می‌کنند،
+یکی از گزینه‌های زیر را انتخاب کن.
+</p>
+
+<div class="buttons">
+<button class="yes" onclick="showTelegram()">آره 🚀</button>
+<button class="no" onclick="showNo()">نه ❌</button>
+</div>
+
+<div id="answerBox"></div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">✍️ پیام شما</h2>
+
+<div class="comment-box">
+
+<input type="text" placeholder="نام شما">
+
+<textarea rows="7" placeholder="نظر یا پیشنهاد خود را بنویسید..."></textarea>
+
+<button class="btn send" onclick="alert('ممنون از پیامت ❤️')">
+ارسال پیام
+</button>
+
+</div>
+
+</section>
+
+<footer>
+🖤 A.T SHOW
+</footer>
+
+<script>
+function showTelegram(){
+document.getElementById("answerBox").innerHTML=`
+<h3>🔥 عالیه!</h3>
+<p>برای همراهی با ما وارد کانال شو:</p>
+<a class="telegram-btn" href="https://t.me/amir14yt" target="_blank">
+📢 ورود به کانال تلگرام
+</a>`;
+}
+
+function showNo(){
+document.getElementById("answerBox").innerHTML=`
+<h3>🙏 ممنون از بازدیدت</h3>
+<p>امیدواریم دوباره به ما سر بزنی.</p>`;
+}
+</script>
+
+</body>
+</html>
+```0
